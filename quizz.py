@@ -2,29 +2,45 @@ from playquiz import play_quiz
 
 topics = ["Science", "Movies", "Geography", "Books", "Music", "Shows"]
 
-print("\nWelcome to my quiz game!")
-print("\nDo you want to play?")
-choice = input()
-
-if choice.lower() != "yes":
-    print("\nOkay, bye!")
-    exit()
-
-else:
-    print("Okay! Let's play!")
+def get_topic_choice():
     print("\nChoose a topic to get quizzed on!")
-    for i in range(len(topics)):
-        print(f"{i + 1}. {topics[i]}")
-    chosen_topic = input()
+    for i, topic in enumerate(topics, start=1):
+        print(f"{i}. {topic}")
+    
+    while True:
+        choice = input("\nEnter the number or name of your chosen topic: ").strip()
+        
+        # Check if input is a valid number
+        if choice.isdigit():
+            choice_num = int(choice)
+            if 1 <= choice_num <= len(topics):
+                return topics[choice_num - 1]
+        
+        # Check if input matches a topic name (case-insensitive)
+        for topic in topics:
+            if choice.lower() == topic.lower():
+                return topic
+        
+        print(f"Please choose a number between 1-{len(topics)} or one of the topic names.")
 
-    for i in range(len(topics)):
-        if chosen_topic.lower() == topics[i].lower():
-            chosen_topic = topics[i]
+def main():
+    print("\nWelcome to my quiz game!")
+    print("\nDo you want to play? (yes/no)")
+    
+    while True:
+        choice = input().strip().lower()
+        if choice in ['yes', 'no']:
             break
+        print("Please answer with 'yes' or 'no'")
+    
+    if choice != "yes":
+        print("\nOkay, bye!")
+        return
+    
+    print("\nOkay! Let's play!")
+    chosen_topic = get_topic_choice()
+    print(f"\nYou chose {chosen_topic}!")
+    play_quiz(chosen_topic)
 
-    print(f"\nYou chose {chosen_topic.capitalize()}!")
-
-if chosen_topic not in topics:
-    print("\nPick one from the list pleasee :(")
-
-play_quiz(chosen_topic)
+if __name__ == "__main__":
+    main()
