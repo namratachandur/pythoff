@@ -1,9 +1,9 @@
 def play_shows_quiz():
     print("Welcome to the Shows Quiz!")
-    genre = input("Choose a genre (Action, Comedy, Drama, Horror): ").strip().lower()
+    genre = input("Choose a genre (Action, Comedy, Drama): ").strip().lower()
     
-    if genre not in ["action", "comedy", "drama", "horror"]:
-        print("Invalid genre. Please choose from Action, Comedy, Drama, or Horror.")
+    if genre not in ["action", "comedy", "drama"]:
+        print("Invalid genre. Please choose from Action, Comedy, or Drama.")
         return
     
     print(f"\nYou chose {genre.capitalize()}!")
@@ -92,253 +92,172 @@ def play_shows_quiz():
             print("Incorrect. The correct answer is Dream.")
 
     elif genre == "comedy":
-        print("\nQuestion 1: What's the kid's name in Home Alone?")
+        print("\nQuestion 1: What's the name of the boss in 'The Office'?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "kevin":
+        if answer == "michael scott":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Kevin.")
+            print("Incorrect. The correct answer is Michael Scott.")
 
-        print("\nQuestion 2: Which actor plays the character of Ace Ventura?")
+        print("\nQuestion 2: Which actor plays the character of Barney in 'How I Met Your Mother'?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "jim carrey":
+        if answer == "neil patrick harris" or answer == "nph":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Jim Carrey.")
+            print("Incorrect. The correct answer is Neil Patrick Harris.")
 
-        print("\nQuestion 3: Whose job does Bruce take in Bruce Almighty?")
+        print("\nQuestion 3: Which show features a comedy duo named Oscar and Felix?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "god's":
+        if answer == "the odd couple":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is God's.")
+            print("Incorrect. The correct answer is The Odd Couple.")
         
-        print("\nQuestion 4: What is the name of the ghost-hunting group in the 1984 comedy?")
+        print("\nQuestion 4: What is the name of the animated show featuring a talking dog named Brian?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "ghostbusters":
+        if answer == "family guy":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Ghostbusters.")
+            print("Incorrect. The correct answer is Family Guy.")
 
-        print("\nQuestion 5: Which movie features three guys who lose their friend at a wild bachelor party?")
+        print("\nQuestion 5: Which dark comedy show feautes a despressed horse?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "the hangover":
+        if answer == "bojack horseman":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is The Hangover.")
+            print("Incorrect. The correct answer is Bojack Horseman.")
         
-        print("\nQuestion 6: Who is the grumpy green creature who tries to steal Christmas?")
+        print("\nQuestion 6: What is the name of the character played by Jennifer Aniston in 'Friends'?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "grinch":
+        if answer == "rachel green" or answer == "rachel":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Grinch.")
+            print("Incorrect. The correct answer is Rachel Green.")
 
-        print("\nQuestion 7: In Despicable Me, what are the little yellow creatures called?")
+        print("\nQuestion 7: In The Simpsons, what is the name of the bartender who owns Moe's Tavern?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "minions":
+        if answer == "moe szyslak":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Minions.")
+            print("Incorrect. The correct answer is Moe Szyslak.")
 
-        print("\nQuestion 8: What kind of animal is Sid from Ice Age?")
+        print("\nQuestion 8: What kind of animal is Ross's pet 'Friends'?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "sloth":
+        if answer == "monkey":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Sloth.")
+            print("Incorrect. The correct answer is Monkey.")
 
-        print("\nQuestion 9: What's the name of the group of kung fu fighters who help Po in Kung Fu Panda?")
+        print("\nQuestion 9: What's the name of the dark comedy written by Ricky Gervais about a man who loses his wife to cancer?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "furious five":
+        if answer == "after life":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Furious Five.")
+            print("Incorrect. The correct answer is After Life.")
 
-        print("\nQuestion 10: Who is Andy's favorite toy in Toy Story?")
+        print("\nQuestion 10: What is the name of Mitchell and Cam's daughter in 'Modern Family'?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "woody":
+        if answer == "lily":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Woody.")
+            print("Incorrect. The correct answer is Lily.")
 
     elif genre == "drama":
-        print("\nQuestion 1: Who does Leonardo DiCaprio play in 'Once Upon a Time in Hollywood'?")
+        print("\nQuestion 1: What show features an autistic surgeon?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "rick dalton":
+        if answer == "the good doctor":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Rick Dalton.")
+            print("Incorrect. The correct answer is The Good Doctor.")
 
-        print("\nQuestion 2: In which movie does Meryl Streep play a chef?")
+        print("\nQuestion 2: Who plays Harvey Specter in 'Suits'?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "julie and julia":
+        if answer == "gabriel macht":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Julie and Julia.")
+            print("Incorrect. The correct answer is Gabriel Macht.")
         
-        print("\nQuestion 3: What is the name of the 2024 movie starring Andrew Garfield and Florence Pugh?")
+        print("\nQuestion 3: Who is House's best friend in 'House MD'?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "we live in time":
+        if answer == "james wilson":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is We Live in Time.")
+            print("Incorrect. The correct answer is James Wilson.")
 
-        print("\nQuestion 4: What movie is the quote 'I'm the king of the world!' from?")
+        print("\nQuestion 4: Who is Rory's boyfriend in season 7 of 'Gilmore Girls'?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "titanic":
+        if answer == "logan" or answer == "logan huntzberger":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Titanic.")
+            print("Incorrect. The correct answer is Logan Huntzberger.")
 
-        print("\nQuestion 5: What movie is the quote 'I'm gonna make him an offer he can't refuse' from?")
+        print("\nQuestion 5: In 'Stranger Things', what is the name of the parallel universe?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "the godfather":
+        if answer == "the upside down":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is The Godfather.")
+            print("Incorrect. The correct answer is The Upside Down.")
 
-        print("\nQuestion 6: Who plays the lead role in 'The Pursuit of Happyness'?")
+        print("\nQuestion 6: In 'Euphoria', what is the name of the main character played by Zendaya?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "will smith":
+        if answer == "Rue" or answer == "rue bennett":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Will Smith.")
+            print("Incorrect. The correct answer is Rue.")
 
-        print("\nQuestion 7: Who plays the lead role in 'Fight Club'?")
+        print("\nQuestion 7: Which show follows the Roy family, owners of a media conglomerate?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "brad pitt":
+        if answer == "succession":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Brad Pitt.")
+            print("Incorrect. The correct answer is Succession.")
 
-        print("\nQuestion 8: What movie is the quote 'Oh, Captain! My Captain!' from?")
+        print("\nQuestion 8: Who is Lucifer Morningstar's brother in 'Lucifer'?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "dead poets society":
+        if answer == "amenadiel":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Dead Poets Society.")
+            print("Incorrect. The correct answer is Amenadiel.")
 
-        print("\nQuestion 9: What movie features a character named Andy Dufresne?")
+        print("\nQuestion 9: Which high school drama revolves around a suicide and cassette tapes?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "the shawshank redemption":
+        if answer == "13 reasons why":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is The Shawshank Redemption.")
+            print("Incorrect. The correct answer is 13 Reasons Why")
 
-        print("\nQuestion 10: In which movie do Steve Carell and Timothée Chalamet play father and son?")
+        print("\nQuestion 10: Who plays Javier Peña in 'Narcos'?")
         answer = input("Your answer: ").strip().lower()
-        if answer == "beautiful boy":
+        if answer == "pedro pascal":
             print("Correct!")
             score += 1
         else:
-            print("Incorrect. The correct answer is Beautiful Boy.")
-
-    elif genre == "horror":
-        print("\nQuestion 1: What is the name of paranormal investigators in 'The Conjuring'?")
-        answer = input("Your answer: ").strip().lower()
-        if "ed warren" and "lorraine warren" in answer:
-            print("Correct!")
-            score += 1
-        else:
-            print("Incorrect. The correct answer is Ed and Lorraine Warren.")
-        
-        print("\nQuestion 2: What is the name of the haunted doll in 'The Conjuring'?")
-        answer = input("Your answer: ").strip().lower()
-        if answer == "annabelle":
-            print("Correct!")
-            score += 1
-        else:
-            print("Incorrect. The correct answer is Annabelle.")
-
-        print("\nQuestion 3: What is the name of the hotel in 'The Shining'?")
-        answer = input("Your answer: ").strip().lower()
-        if answer == "overlook hotel":
-            print("Correct!")
-            score += 1
-        else:
-            print("Incorrect. The correct answer is Overlook Hotel.")
-
-        print("\nQuestion 4: What is the name of the serial killer in 'Silence of the Lambs'?")
-        answer = input("Your answer: ").strip().lower()
-        if answer == "Hannibal Lecter":
-            print("Correct!")
-            score += 1
-        else:
-            print("Incorrect. The correct answer is Hannibal Lecter.")
-        
-        print("\nQuestion 5: How many people die in 'The Babadook'?")
-        answer = input("Your answer: ").strip().lower()
-        if answer == "zero" or answer == "0":
-            print("Correct!")
-            score += 1
-        else:
-            print("Incorrect. The correct answer is Zero.")
-        
-        print("\nQuestion 6: In which horror movie does the villian attack through dreams?")
-        answer = input("Your answer: ").strip().lower()
-        if answer == "a nightmare on elm street":
-            print("Correct!")
-            score += 1
-        else:
-            print("Incorrect. The correct answer is A Nightmare on Elm Street.")
-        
-        print("\nQuestion 7: How often does the Purge happen in 'The Purge'?")
-        answer = input("Your answer: ").strip().lower()
-        if "yearly" in answer or "once a year" in answer:
-            print("Correct!")
-            score += 1
-        else:
-            print("Incorrect. The correct answer is once a year.")
-        
-        print("\nQuestion 8: What horror movie features a William Shatner mask?")
-        answer = input("Your answer: ").strip().lower()
-        if answer == "halloween":
-            print("Correct!")
-            score += 1
-        else:
-            print("Incorrect. The correct answer is Halloween.")
-        
-        print("\nQuestion 9: What is the name of the demon in 'The Exorcist'?")
-        answer = input("Your answer: ").strip().lower()
-        if answer == "pazuzu":
-            print("Correct!")
-            score += 1
-        else:
-            print("Incorrect. The correct answer is Pazuzu.")
-        
-        print("\nQuestion 10: What horror movie features a creepy doll named Chucky?")
-        answer = input("Your answer: ").strip().lower()
-        if answer == "child's play":
-            print("Correct!")
-            score += 1
-        else:
-            print("Incorrect. The correct answer is Child's Play.")
+            print("Incorrect. The correct answer is Pedro Pascal")
 
     print(f"\nYour score is {score} out of 10 (i.e., {score * 10}%).")
     if score >= 7:
-        print("Great job! You're a movies whiz!")
+        print("Great job! You're a shows whiz!")
     else:
         print("Better luck next time!")
     
-    print("Thanks for playing the Movie Quiz!")
+    print("Thanks for playing the Shows Quiz!")
     
